@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <div id="root">
+       
+        <div v-if= "count === 1">
+        <b>Green</b>
+        </div>
+        <div v-else-if = "count ===2">
+            black
+        </div>
+        <div v-else >
+            error
+        </div>
+    </div>
+</body>
+
+
+<script
+src="//cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js">
+</script>
+
+<script>
+    new Vue({
+        el:'#root',
+        data : {count: 27}
+    }
+    )
+   
+</script>
