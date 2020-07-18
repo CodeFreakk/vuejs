@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <div id="root">
+        <h1>{{output}}</h1>
+        <input v-model = "output">
+    </div>
+</body>
+
+
+<script
+src="//cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js">
+</script>
+
+<script>
+    new Vue({
+        el:"#root",
+        data(){
+            return{
+                output: ""
+            }
+        }
+    })
+   
+</script>
